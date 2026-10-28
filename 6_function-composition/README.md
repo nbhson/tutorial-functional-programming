@@ -1,4 +1,4 @@
-# 6. Function Composition (Kết Hợp Hàm)
+# 6. Function Composition (kết hợp hàm)
 
 Đây là "trái tim" của lập trình hàm. Composition cho phép chúng ta xây dựng logic phức tạp từ những mảnh ghép đơn giản.
 
@@ -47,7 +47,7 @@ const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
 const shoutCompose = compose(exclaim, toUpper, trim); 
 ```
 
-## Bei sao cần Composition?
+## Vì sao cần Composition?
 
 ### 1. Declarative Data Flow
 Bạn nhìn vào danh sách các hàm trong `pipe`, bạn hiểu ngay luồng dữ liệu biến đổi như thế nào mà không cần quan tâm chi tiết bên trong từng hàm.

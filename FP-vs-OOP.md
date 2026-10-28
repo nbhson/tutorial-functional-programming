@@ -17,7 +17,7 @@ Mục tiêu không phải để tìm ra cái nào "tốt hơn", mà để hiểu
 
 ---
 
-## 2. Ví dụ Code So Sánh
+## 2. Ví dụ code so sánh
 
 Giả sử chúng ta có một bài toán: **Quản lý lương nhân viên**. Cần tăng lương 10% cho nhân viên xuất sắc.
 
@@ -86,7 +86,7 @@ console.log(promotedBob.salary); // 1100
 
 ---
 
-## 4. Ưu và Nhược điểm
+## 4. Ưu và nhược điểm
 
 ### Object-Oriented Programming (OOP)
 *   **Ưu điểm:**

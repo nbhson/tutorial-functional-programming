@@ -1,4 +1,4 @@
-# 2. Side Effects (Tác Dụng Phụ)
+# 2. Side Effects (tác dụng phụ)
 
 Nếu Pure Function là "thiên thần" thì Side Effect thường bị xem là "ác quỷ". Nhưng thực tế, phần mềm không thể thiếu Side Effect.
 

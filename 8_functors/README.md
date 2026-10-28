@@ -13,7 +13,7 @@ Ví dụ phổ biến:
 
 ---
 
-## 1. Tư duy "Cái Hộp" (The Box Analogy)
+## 1. Tư duy "cái hộp" (The Box Analogy)
 
 Để hiểu Functor, hãy tưởng tượng:
 *   **Value:** Một chiếc đồng hồ quý giá.

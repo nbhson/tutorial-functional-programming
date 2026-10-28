@@ -1,0 +1,10 @@
+{
+  "name": "tutorial-functional-programming",
+  "version": "1.0.0",
+  "description": "Tutorial Functional Programming voi JavaScript - moi chieu co code vi du chay duoc",
+  "type": "module",
+  "scripts": {
+    "start": "node 0_intro/README.md"
+  },
+  "license": "MIT"
+}

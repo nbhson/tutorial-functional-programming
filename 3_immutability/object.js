@@ -1,4 +1,4 @@
-// Sai tính bất biến
+// Sai tinh bat bien: dung let va sua truc tiep object (Mutation)
 let person = {
   name: "Anonystick",
   profession: "Developer",
@@ -7,20 +7,6 @@ let person = {
 person.name = "CR7";
 person.description = `World's greatest Player`;
 
-
-// Nên clone object và xử lí trên object mới
-const person = {
-  name: "Anonystick",
-  profession: "Developer",
-  description: ` Bad Developer`,
-};
-
-const updatedPerson = {
-  ...person,
-  name: "CR7",
-};
-
-const greatestLawyer = {
-  ...updatedPerson,
-  description: `World's greatest Player`,
-};
+console.log(person);
+// Object goc da bi thay doi ngam - noi khac cung co the thay doi
+// person ma khong ai hay: kho debug, kho doan trang thai.

@@ -1,4 +1,4 @@
-# 3. Immutability (Tính Bất Biến)
+# 3. Immutability (tính bất biến)
 
 > "Nếu muốn sửa đổi dữ liệu, hãy tạo ra một bản sao mới thay vì sửa trực tiếp bản gốc."
 
@@ -91,7 +91,7 @@ const newNums = [...nums, 4]; // OK
 So sánh `Object.freeze` vs `as const`:
 
 *   **Object.freeze:** Shallow (chỉ cấp 1). Runtime check (JS).
-*   **as const:** Deep (tất cả các cấp). Compass-time check (TS).
+*   **as const:** Deep (tất cả các cấp). Compile-time check (TS).
 
 ```typescript
 const config = {

@@ -1,8 +1,11 @@
+// Vi du: ket hop ham theo cong doan go muc (carpentry pipeline)
+// cac ham deu la pure function: nhan vao 1 chuoi, tra ve chuoi moi
+
 const cua = (x) => {
   return `${x} đã cưa`;
 };
 
-const say = (x) => {
+const boQua = (x) => {
   return `${x} đã sấy`;
 };
 
@@ -18,38 +21,37 @@ const cha = (x) => {
   return `${x} đã chà`;
 };
 
-const moc = (x) => {
+const lap = (x) => {
   return `${x} đã gắn móc`;
 };
 
-// nhập môn
-var thot1 = cua("khúc gỗ");
-thot1 = say(thot1);
-thot1 = bao(thot1);
-thot1 = khoan(thot1);
-thot1 = cha(thot1);
-thot1 = moc(thot1);
-console.log(thot1);
+// Buoc 1: chay tuan tu, gan lai bien (chua FP lam)
+var sanPham1 = cua("khúc gỗ");
+sanPham1 = boQua(sanPham1);
+sanPham1 = bao(sanPham1);
+sanPham1 = khoan(sanPham1);
+sanPham1 = cha(sanPham1);
+sanPham1 = lap(sanPham1);
+console.log(sanPham1);
 
-// nữa bước đại đạo
-var thot2 = moc(cha(khoan(bao(say(cua("khúc gỗ"))))));
-console.log(thot2);
+// Buoc 2: long ham (nested calls) - kho doc khi qua sau
+var sanPham2 = lap(cha(khoan(bao(boQua(cua("khúc gỗ"))))));
+console.log(sanPham2);
 
-// đại đạo cường giả
+// Buoc 3: compose - gom thanh mot cong doan duy nhat
 const compose = (...fns) => {
   return fns.reduce((f, g) => (x) => f(g(x)));
 };
 
-const quang_cho_tao_cai_thot = compose(moc, cha, khoan, bao, say, cua);
-console.log(quang_cho_tao_cai_thot("khúc gỗ"));
+const quyTrinhGoMuc = compose(lap, cha, khoan, bao, boQua, cua);
+console.log(quyTrinhGoMuc("khúc gỗ"));
 
-/** Dán nhãn */
-const nhan = (x) => {
+/** Them buoc dan nhan vao cuoi day truyen */
+const danNhan = (x) => {
   return `${x} đã dán nhãn`;
 };
 
-const lam_thot_de_ban = compose(nhan, moc, cha, khoan, bao, say, cua); // c1
-// const lam_thot_de_ban = compose(nhãn, quăng_cho_tao_cái_thớt); // c2
+const lamSanPhamBan = compose(danNhan, lap, cha, khoan, bao, boQua, cua);
 
-const thot_ban = lam_thot_de_ban("khúc gỗ");
-console.log(thot_ban);
+const sanPhamBan = lamSanPhamBan("khúc gỗ");
+console.log(sanPhamBan);

@@ -17,11 +17,11 @@ Nó khác biệt hoàn toàn với **Imperative Programming** (Lập trình mệ
 
 ---
 
-## 2. Các Khái niệm Cốt lõi (Core Concepts)
+## 2. Các khái niệm cốt lõi (Core Concepts)
 
 Để thành thạo FP, bạn cần nắm vững các khái niệm sau:
 
-### 2.1 Pure Functions (Hàm Thuần Khiết)
+### 2.1 Pure Functions (hàm thuần khiết)
 Một hàm được gọi là Pure Function nếu thỏa mãn 2 điều kiện:
 1.  **Determinism:** Với cùng một đầu vào, luôn trả về cùng một đầu ra.
 2.  **No Side Effects:** Không làm thay đổi bất kỳ thứ gì bên ngoài hàm (không sửa biến global, không sửa file, không gọi API, không `console.log`...).
@@ -40,7 +40,7 @@ function addPure(x, y) {
 }
 ```
 
-### 2.2 Immutability (Tính Bất Biến)
+### 2.2 Immutability (tính bất biến)
 Khi một dữ liệu được tạo ra, nó không bao giờ được thay đổi. Nếu muốn sửa đổi, bạn phải tạo ra một bản sao mới với dữ liệu đã sửa.
 
 **Lợi ích:** Tránh lỗi do nhiều nơi cùng sửa một dữ liệu (Race condition, Concurrency issues).
@@ -58,7 +58,7 @@ const newArr = [...arr, 4]; // Tạo mảng mới
 *   **First-Class Functions:** Hàm được coi là "công dân hạng nhất". Có thể gán hàm cho biến, truyền hàm làm tham số, hoặc return một hàm khác.
 *   **Higher-Order Functions (HOF):** Là hàm nhận một hàm khác làm tham số hoặc trả về một hàm. Các ví dụ phổ biến đắc lực nhất: `map`, `filter`, `reduce`.
 
-### 2.4 Composition (Kết Hợp Hàm)
+### 2.4 Composition (kết hợp hàm)
 Là kỹ thuật ghép nhiều hàm nhỏ lại với nhau để giải quyết bài toán lớn. Output của hàm này là Input của hàm tiếp theo.
 `h(x) = f(g(x))`
 

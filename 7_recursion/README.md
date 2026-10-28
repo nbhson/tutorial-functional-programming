@@ -1,4 +1,4 @@
-# 7. Recursion (Đệ Quy)
+# 7. Recursion (đệ quy)
 
 Trong FP thuần túy (như Haskell), không có vòng lặp (`for`, `while`). Để lặp, ta dùng **Đệ quy**.
 

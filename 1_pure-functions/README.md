@@ -1,4 +1,4 @@
-# 1. Pure Functions (Hàm Thuần Khiết)
+# 1. Pure Functions (hàm thuần khiết)
 
 Đây là khái niệm quan trọng nhất, là viên gạch nền móng của Functional Programming.
 
